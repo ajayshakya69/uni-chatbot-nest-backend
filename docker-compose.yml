@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  uni-chatbot-service:
+    image: ajayshakya786/uni-chatbot-nest-backend:latest
+    ports:
+      - '9000:4000'
+    restart: unless-stopped
+    environment:
+      PORT: 4000
+      POSTGRES_CONNECTION_STRING: 'postgresql://dev_user:dev_password@13.235.62.174:5431/chatbot_db'
+      X_SECRET: 'secret'
+      PYTHON_SERVICE_URL: 'http://13.127.222.108:8000'
