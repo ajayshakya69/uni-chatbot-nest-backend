@@ -17,4 +17,5 @@ COPY --from=build /build/tsconfig.json .
 
 EXPOSE 4000
 
+
 CMD [ "yarn", "start:prod" ]
