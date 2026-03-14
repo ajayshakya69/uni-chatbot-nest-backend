@@ -14,6 +14,7 @@ async function bootstrap() {
     origin: [
       'http://localhost:3000',
       'http://localhost:3001',
+      'https://uni-chatbot.ajay.works',
       process.env.FRONTEND_URL,
     ].filter(Boolean) as string[],
     credentials: true,
