@@ -6,6 +6,7 @@ import { HealthCheckModule } from 'src/core/health-check/health.module';
 import { ReqResInterceptor } from 'src/core/interceptors/response-interceptor';
 import { UserModule } from 'src/modules/users/users.module';
 import { TranscriptModule } from 'src/modules/transcript/transcript.module';
+import { NewsModule } from 'src/modules/news/news.module';
 import { LoggerModule } from 'src/core/services/logger/logger.module';
 import { HttpExceptionFilter } from 'src/core/filters/http-exception.filter';
 
@@ -20,6 +21,7 @@ import { HttpExceptionFilter } from 'src/core/filters/http-exception.filter';
     // modules
     UserModule,
     TranscriptModule,
+    NewsModule,
   ],
   providers: [
     {
